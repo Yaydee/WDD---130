@@ -1,0 +1,93 @@
+form {
+    display: grid;
+    grid-template-columns: 100px 250px 100px;
+    grid-template-rows: 50px 200px 50px 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+#topCard {
+    grid-column: 1/span 2;
+    grid-row: 1/span 2;
+    display: grid;
+    grid-template-columns: 200px 100px;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: lightgray;
+    z-index: 1;
+    box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 15px;
+}
+
+#total {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.card-image {
+    grid-row: 1;
+    grid-column: 2;
+    justify-self: right;
+}
+
+#cardNumber{
+    grid-row: 2;
+    grid-column: span 3;
+}
+
+#Number {
+    width: 100%;
+}
+
+#cardHolder{
+    grid-row: 3;
+    grid-column: 1;
+}
+
+#expiration {
+    grid-row: 3;
+    grid-column: 2;
+}
+
+#expMonth {
+    width: 40px;
+}
+
+#expYear {
+    width: 40px;
+}
+
+#backCard {
+    grid-column: 2/span 2;
+    grid-row: 2/span 2;
+    display: grid;
+    grid-template-columns: 250px 100px;
+    grid-template-rows: 1fr 1fr;
+    background-color: lightgray;
+    border-radius: 10px;
+}
+
+#securityCode {
+    grid-row: 2;
+    grid-column: 2;
+    align-items: baseline;
+    width: 50px;
+    margin-left: 10px;
+}
+
+#submit {
+    grid-column: 3;
+    grid-row: 4;
+    margin: auto;
+}
+
+.swipe {
+    height: 50px;
+    background-color: black;
+    grid-column: span 2;
+    margin-top: 25px;
+}
