@@ -1,0 +1,85 @@
+:root {
+    /* change the values below to your colors from your palette */
+    --primary-color: #396E94;
+    --secondary-color: #191923;
+    --accent1-color: #c8c8c8;
+    --accent2-color: #b3b3b3;
+  
+    /* change the values below to your chosen font(s) */
+    --heading-font: 'Times New Roman', Times, serif;
+    --paragraph-font: Lato, Helvetica, sans-serif;
+  
+    /* these colors below should be chosen from among your palette colors above */
+    --headline-color-on-white: var(
+      --primary-color
+    ); /* headlines on a white background */
+    --headline-color-on-color: white; /* headlines on a colored background */
+    --paragraph-color-on-white: var(
+      --primary-color
+    ); /* paragraph text on a white background */
+    --paragraph-color-on-color: white; /* paragraph text on a colored background */
+    --paragraph-background-color: var(--primary-color);
+    --nav-link-color: var(--primary-color);
+    --nav-background-color: var(--secondary-color);
+    --nav-hover-link-color: white;
+    --nav-hover-background-color: var(--primary-color);
+}
+
+header {
+    display: grid;
+    grid-template-columns: 130px 300px;
+    grid-template-rows: 150px;    
+}
+
+header h2 {
+    grid-column: 2;
+    font-size: 50px;
+    padding-top: -30px;
+}
+
+
+body {
+    font-family: Lato, Helvetica, sans-serif;
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
+}
+
+.item {
+    width: 250px;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 75px 175px;
+    grid-template-rows: 30px 30px 40px;
+    color: var(--accent2-color);
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--primary-color);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.group {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 70px 110px;
+}
+
+.group h2 {
+    border-width: 2px;
+    border-bottom-style: solid;
+    border-color: var(--accent2-color);
+    grid-column: span 4;
+    justify-self: center;
+    margin-top: 20px;
+}
+
+.group div {
+    justify-self: center;
+    margin-top: 5px;
+}
+
+.attribute1, .attribute2 {
+    color: aqua;
+    grid-column: span 2;
+    justify-self: center;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="api_viewer.mjs" type="module"></script>
+    <script src="attribute_hunter.js" type="module"></script>
+    <link rel="stylesheet" href="attribute_hunter.css">
+    <title>Attribute Hunter</title>
+</head>
+<body>
+    <main>
+        <header>
+            <img class="large_logo" src="logo_large.jpg" alt="Attribute Hunter Logo">
+            <h2>Attribute Hunter</h2>
+        </header>
+        <form>
+            <p class="attribute">
+                <label for="attribute1">Attribute 1</label>
+                <select id="attribute1"></select>
+            </p>
+            <p class="attribute">
+                <label for="attribute2">Attribute 2</label>
+                <select id="attribute2"></select>
+            </p>
+            <button type="submit" id="submit">SUBMIT</button>
+        </form>
+        <section id="output"></section>
+    </main>
+</body>
+</html>
